@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: c-protien-app
-        image: raemondarellano/body-builder-protien:1.0.0
+        image: raemondarellano/body-builder-protien:1.0.0-1
         ports:
         - containerPort: 80 
