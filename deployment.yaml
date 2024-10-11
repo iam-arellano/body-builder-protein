@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-bodybuilder-protien
+  labels:
+    app: app-protien
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-protien
+  template:
+    metadata:
+      labels:
+        app: app-protien
+    spec:
+      containers:
+      - name: c-protien-app
+        image: raemondarellano/body-builder-protien:1.0.0
+        ports:
+        - containerPort: 80 
